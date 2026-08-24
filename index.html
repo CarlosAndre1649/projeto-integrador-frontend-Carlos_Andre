@@ -4,34 +4,71 @@
         <title>Lista Universal de Receitas</title>
         </head>
 <body>
-    <h1>Lista Universal de Receitas</h1>
-    <p>O objetivo da Lista é criar um local onde todos possam divulgar suas receitas</p>
-    <ul>
-        <li>Comida Brasileira</li>
-        <li>Comida Italiana</li>
-        <li>Comida Japonesa</li>
-    </ul>
-    <table>
-        <tr>
-            <th>Categoria</th>
-            <th>Receita</th>
-        </tr>
-        <tr>
-            <td>Comida Brasileira</td>
-            <td>Feijoada</td>
-        </tr>
-        <tr>
-             <td>Comida Italiana</td>
-             <td>Pizza</td>
-        </tr>
-        <tr>
-            <td>Comida Japonesa</td>
-            <td>Sushi</td>
-        </tr>
-    </table>
+    <header>
+        <h1>Lista Universal de Receitas</h1>
+        <p>O objetivo da Lista é criar um local onde todos possam divulgar suas receitas</p>
+    </header>
+    <main>
+        <section>
+            <h2>Categorias</h2>
+            <ul>
+                <li>Comida Brasileira</li>
+                <li>Comida Italiana</li>
+                <li>Comida Japonesa</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Receitas</h2>
+            <table>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Receita</th>
+                </tr>
+                <tr>
+                    <td>Comida Brasileira</td>
+                    <td>Feijoada</td>
+                </tr>
+                <tr>
+                    <td>Comida Italiana</td>
+                    <td>Pizza</td>
+                </tr>
+                <tr>
+                    <td>Comida Japonesa</td>
+                    <td>Sushi</td>
+                </tr>
+            </table>
+        </section>
     <a href="https://www.receiteria.com.br/receita/feijoada/" target="_blank" rel="noopener noreferrer">Receita de Feijoada</a>
     <img src="assets/images/feijoada.png" alt="Feijoada Brasileira">
-    
+    <section>
+        <h2>Compartilhe aqui sua Receita</h2>
+        <form>
+            <label for="nome">Nome da Receita:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" minlength="10" required></textarea>
+            <label for="tempo">Tempo de preparo em minutos:</label>
+            <input type="number" id="tempo" name="tempo">
+            <label for="preparo">Modo de Preparo:</label>
+            <textarea id="preparo" name="preparo"></textarea>
+            <fieldset>
+                <legend>Categoria de Receita</legend>
 
+                <input type="radio" id="brasileira" name="categoria" value="brasileira">
+                <label for="brasileira">Brasileira</label>
+                <input type="radio" id="italiana" name="categoria" value="italiana">
+                <label for="italiana">Italiana</label>
+                <input type="radio" id="japonesa" name="categoria" value="japonesa">
+                <label for="'japonesa">Japonesa</label>
+        
+            </fieldset>
+        <button type="submit">Enviar Receita</button>
+        </form>
+    </section>
+    
+    </main>
+    <footer>
+        <p>Lista Universal de Receitas</p>
+    </footer>
 </body>
 </html>
